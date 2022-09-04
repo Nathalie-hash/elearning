@@ -70,7 +70,7 @@
                 background:#000000 !important;
                 width:100%;
                 border-radius:15px;
-                padding:50px 70px;
+                padding:90px 150px;
             }
         </style>
     </head>
