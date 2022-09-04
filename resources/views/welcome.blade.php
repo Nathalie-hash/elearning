@@ -23,6 +23,7 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                background:#000000 !important;
             }
 
             .full-height {
