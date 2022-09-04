@@ -90,7 +90,7 @@
             @endif
 
             <div class="content">
-            <div class="container">
+            <div class="container bg-dark">
             <h1>Bienvenu à Educom</h1>
             <p><i>Votre plate-form elearning pour suivre et télécharger les cours facilement et gratuitement</i></p>
             </div>
