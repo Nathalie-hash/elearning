@@ -68,6 +68,10 @@
             }
             .welcom-text{
                 background:#000000 !important;
+                width:100%;
+                border-radius:15px;
+                padding-top:50px;
+                padding-bottom:50px;
             }
         </style>
     </head>
