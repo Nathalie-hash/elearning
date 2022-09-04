@@ -91,7 +91,8 @@
 
             <div class="content">
             <div class="container">
-            <h3>Bienvenu </h3> à <i>Educom</i>
+            <h1>Bienvenu à Educom</h1>
+            <p><i>Votre plate-form elearning pour suivre et télécharger les cours facilement et gratuitement</i></p>
             </div>
             </div>
         </div>
