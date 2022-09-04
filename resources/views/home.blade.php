@@ -8,11 +8,11 @@
         // l'utilisateur courant
         $user = Auth::getUser();
     @endphp
-    
+
     @hasanyrole('administrateur|etudiant|enseignant')
         @foreach($user->niveaux as $niveau)
             <div class="box" style="width:720px !important">
-                <h2 style="font-size:25px;font-weight:bold;color:#3d3d3d;border-bottom:1px solid #7d2ae7 !important"><a href="/niveau/{{ $niveau->id }}" class="text-dark" style="text-decoration: none"> Niveau {{$niveau->nom}}</a></h2>
+            <h4 style="font-size:18px;padding-bottom:10px;font-weight:bold;color:#7d2ae7;border-bottom:1px solid #7d2ae7 !important"><a href="/niveau/{{ $niveau->id }}" class="text-dark" style="text-decoration: none"> Niveau {{$niveau->nom}}</a></h4>
                 <i class="d-block mt-3 mb-2"><button class="btn" data-toggle="collapse" data-target="#{{ $niveau }}">Liste des matières &gt;</button></i>
                 <ul class="collapse list-group w-100" >
                     @foreach($niveau->matieres as $matiere)
@@ -20,10 +20,10 @@
                         <li class="list-group-item "> <a href="/matiere/{{$matiere->id}}" class="d-block w-100 h-100">{{$matiere->nom}}</a></li>
                     @endforeach
                 </ul>
-            </div>    
+            </div>
         @endforeach
     @else
     <p>Vous êtes enregistré avec succès! Veuillez contacter l'administrateur pour continuer</p>
     {{-- <script  type="text/javascript">window.location = {url('/')};</script> --}}
-    @endhasanyrole    
+    @endhasanyrole
 @endsection
