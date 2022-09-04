@@ -69,7 +69,7 @@
             .welcom-text{
                 background:#000000 !important;
                 border-radius:15px;
-                padding:90px 150px;
+                padding:90px 200px;
             }
         </style>
     </head>
