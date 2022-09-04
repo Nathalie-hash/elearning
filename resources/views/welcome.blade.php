@@ -67,7 +67,7 @@
                 margin-bottom: 30px;
             }
             .welcom-text{
-                background:#000000 !important;
+                background:#7d2ae7 !important;
                 border-radius:15px;
                 padding:90px 200px;
             }
