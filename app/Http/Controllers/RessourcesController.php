@@ -35,7 +35,7 @@ class RessourcesController extends Controller
         // Pour rappel on a
         // user => niveau => matiere => ressource
         $matiere = Ressource::where('id',$id)->get()->first()["matiere_id"];
-        $name_disk =  Matiere::where('id',$matiere)->get()->first()["nom"]
+        $name_disk =  Matiere::where('id',$matiere)->get()->first()["nom"];
         $niveau_matiere = Matiere::where('id',$matiere)->get()->first()["niveau_id"];
         $id_user=auth()->user()->id;
         $niveau_user= auth()->user()->niveaux()->where('user_id',$id_user)->get()->first()["pivot"]["niveau_id"];
