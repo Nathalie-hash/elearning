@@ -16,7 +16,7 @@
         <!-- Styles -->
         <style>
             html, body {
-               
+
                 background-image: url('tco1.webp');
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
@@ -79,7 +79,7 @@
                         <a href="{{ url('/home') }}">Acceuil</a>
                     @else
                        {{-- <a href="#">A propos</a>
-                        <a href="#">Contact</a> --}} 
+                        <a href="#">Contact</a> --}}
                         <a href="{{ route('login') }}">Se Connecter</a>
 
                         @if (Route::has('register'))
@@ -90,7 +90,9 @@
             @endif
 
             <div class="content">
-               
+            <div class="container">
+            <h3>Bienvenu </h3> à <i>Educom</i>
+            </div>
             </div>
         </div>
     </body>
