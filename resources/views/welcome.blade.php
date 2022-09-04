@@ -8,7 +8,7 @@
         Ce n'est pas une page de laravel mais
         le portail pour notre application --}}
 
-        <title>Application de ...</title>
+        <title>Bienvenu - Educom</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
