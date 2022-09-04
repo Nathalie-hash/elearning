@@ -42,8 +42,8 @@ class RoleController extends Controller
 
 	// édition de rôle d'un utilisateur
 	public function save(Request $request){
-		// TODO: quand on a déjà un utilisateur de rôle admin et que 
-		// l'on connaît ses identifiants de connexion, 
+		// TODO: quand on a déjà un utilisateur de rôle admin et que
+		// l'on connaît ses identifiants de connexion,
 		// seul l'admin peut effectuer cet action
 
 		$user = User::find($request->user);
@@ -73,11 +73,11 @@ class RoleController extends Controller
 			// TODO : supprimer ces niveaux
 			$user->niveaux()->detach(Niveau::find($niveauId));
 		}
-		
+
 		// on assignge ce role à l'utilisateur
 		// pour assigner manuellement, regarder dans la table model_has_roles
 		$user->syncRoles($role->name);
-	
+
 		return redirect("/roles/index");
 	}
 
