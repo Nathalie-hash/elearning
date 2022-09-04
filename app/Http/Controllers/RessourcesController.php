@@ -42,7 +42,7 @@ class RessourcesController extends Controller
         if (auth()->check() && auth()->user()->hasRole('enseignant')){
             $resource = Ressource::find($id);
             $pathname= $resource->chemin;
-            return Storage::disk($name_disk)->download($pathname);
+            return Storage::disk("app")->download($pathname);
         }else if (auth()->check() && auth()->user()->hasRole('administrateur')) {
             $resource = Ressource::find($id);
             $pathname= $resource->chemin;
@@ -50,7 +50,7 @@ class RessourcesController extends Controller
         }else if(auth()->check() && auth()->user()->hasRole('etudiant') && $niveau_matiere == $niveau_user)  {
             $resource = Ressource::find($id);
             $pathname= $resource->chemin;
-            return Storage::disk($name_disk)->download($pathname);
+            return Storage::disk("app")->download($pathname);
         }else{
             abort(401, 'You are not allowed to access this page');
         }
