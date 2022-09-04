@@ -95,7 +95,7 @@
 
             <div class="content">
             <div class="container welcom-text">
-            <h1>Bienvenu à Educom</h1>
+            <h1 style="color:#7d2ae7 !important;font-size:40px">Bienvenu à Educom</h1>
             <p><i>Votre plate-form elearning pour suivre et télécharger les cours facilement et gratuitement</i></p>
             </div>
             </div>
