@@ -9,13 +9,12 @@
             {{ session('succes') }}
         </div>
     @endif
-
-    <h5>
+    <hr>
+    <h4>
         Matière : {{$matiere->nom}}
         <a href="/niveau/{{$matiere->niveau_id}}">{{$matiere->niveau->nom}}</a>
-    </h5>
+    </h4>
     <i>{{$matiere->detail}}</i>
-    <p>{{ $matiere["détail"]}}</p>
 
     <hr>
     <br>
