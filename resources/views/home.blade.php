@@ -24,7 +24,7 @@
             </div>
         @endforeach
        @else
-       <p>administrateur</p>
+       <p class="text-center">administrateur</p>
        @endif
     @else
     <p class="text-center">Vous êtes enregistré avec succès! Veuillez contacter l'administrateur pour continuer</p>
