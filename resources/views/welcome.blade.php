@@ -18,7 +18,7 @@
             html, body {
 
                 background-image: url('../../tco1.webp') !important;
-                background-position:center;
+
                 background-repeat:no-repeat;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
