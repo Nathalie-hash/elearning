@@ -14,10 +14,10 @@
     @endphp
 	@if(auth()->user()->hasRole("administrateur"))
 		<div>
-			<strong><a href="/roles/index" class="btn btn-primary p-3 mb-5">See all roles</a></strong>
+			<strong><a href="/roles/index" class="btn btn-primary p-3 mb-5">Tous les rôles</a></strong>
 		</div>
-	
-	<h3 class="bg-violet p-2">Assign roles</h3>
+
+	<h3 class="bg-violet p-2">Assigner un rôle</h3>
 	<form action="/roles/save" method="POST" class="w-100 p-3" style="width:520px !important">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
 		users: <br>
@@ -34,7 +34,7 @@
 				@endif
 			@endforeach
 		</select>
-		<br>Levels: <br>
+		<br>Niveau: <br>
 		<select name="niveau[]" id="" multiple class="form-control" required>
 			@foreach ($niveaux as $niveau)
 				<option value="{{$niveau->id}}">{{$niveau->nom}}</option>
@@ -44,8 +44,8 @@
 	</form>
 	@else
 		Vous n'êtes pas autorisé à voir page
-	
+
 	@endif
-		
+
 </div>
 @endsection
