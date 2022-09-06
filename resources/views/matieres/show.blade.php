@@ -10,11 +10,11 @@
         </div>
     @endif
 
-    <h1>
+    <h5>
         Matière : {{$matiere->nom}}
         <a href="/niveau/{{$matiere->niveau_id}}">{{$matiere->niveau->nom}}</a>
-    </h1>
-    <p>{{$matiere->detail}}</p>
+    </h5>
+    <i>{{$matiere->detail}}</i>
     <p>{{ $matiere["détail"]}}</p>
 
     <hr>
@@ -72,7 +72,7 @@
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="file" name="ressource"  id="">
             <input type="hidden" name="matiere" value="{{$matiere->id}}">
-            <input type="submit" class="btn btn-success" value="téléverser">
+            <input type="submit" class="btn btn-info" value="téléverser">
         </form>
     @endif
 </div>
