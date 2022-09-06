@@ -10,16 +10,14 @@
         </div>
     @endif
     <hr>
-    <h5 class="mb-3">
+    <h5 class="mb-3 border-bottom ">
         Matière : {{$matiere->nom}}
         <a href="/niveau/{{$matiere->niveau_id}}">{{$matiere->niveau->nom}}</a>
     </h5>
     <p>{{$matiere->detail}}</p>
 
     <hr>
-    <br>
-    <br>
-    <br>
+
     <h5 class="mb-3">Ressources</h5>
     {{-- TODO: lister les ressources associés à ce matière ici
     pour chaque ressources, renseigner un lien de téléchargement
