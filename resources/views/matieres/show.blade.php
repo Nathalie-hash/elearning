@@ -10,16 +10,16 @@
         </div>
     @endif
     <hr>
-    <h4 class="mb-3 bg-success">
+    <h5 class="mb-3">
         Matière : {{$matiere->nom}}
         <a href="/niveau/{{$matiere->niveau_id}}">{{$matiere->niveau->nom}}</a>
-    </h4>
+    </h5>
     <i>{{$matiere->detail}}</i>
 
     <hr>
     <br>
 
-    <h4 class="mb-3">Ressources</h4>
+    <h5 class="mb-3">Ressources</h5>
     {{-- TODO: lister les ressources associés à ce matière ici
     pour chaque ressources, renseigner un lien de téléchargement
     (cf: RessourcesController@getRessource et web.php)
@@ -65,7 +65,7 @@
 
     @endphp
     @if(!auth()->user()->hasRole("etudiant"))
-    <h4 class="mb-3">Ajouter ressources</h4>
+    <h5 class="mb-3">Ajouter ressources</h5>
         <form action="/ressources/add" enctype="multipart/form-data" method="post">
             {{-- TODO: rappel : toujours ajouter cet input _token dans les formulaires. Ici OK --}}
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
