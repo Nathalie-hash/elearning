@@ -73,7 +73,7 @@
             .welcom-text{
                 border-radius:15px;
                 padding:90px 200px;
-                background:#ffffff6f;
+                background:#ffffff4f;
                 color:#202020 !important;
             }
         </style>
