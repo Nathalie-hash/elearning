@@ -80,7 +80,7 @@
                 transition:all 0.9s ease;
             }
             .welcom-text:hover{
-                top:-25px;
+                top:-5px;
                 background:#ffffff6f;
             }
         </style>
