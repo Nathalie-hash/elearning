@@ -25,7 +25,7 @@
         @endforeach
        @else
        <p class="text-center shadow">
-       <p class="text-center" style="font-size:25px;font-weight:bold;color:#3d3d3d">Bienvenue {{$user->name}}</p>
+       <p class="text-center" style="font-size:25px;font-weight:bold;color:#3d3d3d">Bienvenue <i>{{$user->name}}</i></p>
        <p >En tant qu'administrateur ,  vous pouvez :</p>
        <ul class="list-group">
        <li class="list-group-item">Assigner des rôles</li>
