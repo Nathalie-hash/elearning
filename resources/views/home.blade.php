@@ -26,7 +26,7 @@
        @else
        <p class="text-center shadow">
        <p class="text-center" style="font-size:25px;font-weight:bold;color:#3d3d3d">Bienvenue <i>{{$user->name}}</i></p>
-       <p >En tant qu'administrateur ,  vous pouvez :</p>
+       <p style="color:#4d4d4d;font-size:13px">En tant qu'administrateur ,  vous pouvez :</p>
        <ul class="list-group">
        <li class="list-group-item">Assigner des rôles</li>
        <li class="list-group-item">Voir la liste des utilisateurs</li>
