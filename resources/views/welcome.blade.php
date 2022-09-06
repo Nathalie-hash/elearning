@@ -81,7 +81,7 @@
             }
             .welcom-text:hover{
                 top:-5px;
-                background:#ffffff6f;
+                background:#ffffff8f;
             }
         </style>
     </head>
