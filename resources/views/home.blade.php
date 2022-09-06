@@ -25,7 +25,7 @@
         @endforeach
        @else
        <p class="text-center">
-       <p>Bienvenue {$user->name}</p>
+       <p>Bienvenue {{$user->name}}</p>
 
        </p>
        @endif
