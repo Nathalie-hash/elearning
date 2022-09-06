@@ -62,6 +62,8 @@
                 font-weight: 600;
                 letter-spacing: .1rem;
                 text-decoration: none;
+                background:#ffffffbf;
+                border-radius:15px;
                 text-transform: uppercase;
             }
 
