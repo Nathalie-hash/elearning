@@ -25,7 +25,13 @@
         @endforeach
        @else
        <p class="text-center">
-       <p>Bienvenue {{$user->name}}</p>
+       <p class="text-center">Bienvenue {{$user->name}}</p>
+       <p class="text-center">En tant qu'administrateur ,  vous pouvez :</p>
+       <ul>
+       <li>Assigner des rôles</li>
+       <li>Voir la liste des utilisateurs</li>
+       <li>Assigner un niveau à un utilisateur</li>
+       </ul>
 
        </p>
        @endif
