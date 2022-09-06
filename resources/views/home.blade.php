@@ -10,6 +10,7 @@
     @endphp
 
     @hasanyrole('administrateur|etudiant|enseignant')
+     @if(!$user->hasRole("administrateur"))
         @foreach($user->niveaux as $niveau)
             <div class="box" style="width:720px !important">
             <h4 style="font-size:18px;padding-bottom:10px;font-weight:bold;color:#7d2ae7;border-bottom:1px solid #7d2ae7 !important"><a href="/niveau/{{ $niveau->id }}" class="btn btn-primary p-2" style="text-decoration: none"> Niveau {{$niveau->nom}}</a></h4>
@@ -22,8 +23,11 @@
                 </ul>
             </div>
         @endforeach
+       @else
+       <p>administrateur</p>
+       @endif
     @else
-    <p>Vous êtes enregistré avec succès! Veuillez contacter l'administrateur pour continuer</p>
+    <p class="text-center">Vous êtes enregistré avec succès! Veuillez contacter l'administrateur pour continuer</p>
     {{-- <script  type="text/javascript">window.location = {url('/')};</script> --}}
     @endhasanyrole
 @endsection
