@@ -19,7 +19,7 @@
 
                 background-image: url('../../css/OIP.jpg') !important;
                 background-position:center;
-                background-repeat:no-repeat;
+                background-repeat:repeat;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
