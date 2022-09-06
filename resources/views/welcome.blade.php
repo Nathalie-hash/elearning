@@ -80,7 +80,7 @@
     </head>
     <body>
     <div class="flex-center position-ref full-height" style="border-bottom:1px solid #7d2ae7 !important">
-        <div class="top-left" style="position:absolute;left:10px;top:18px;color:#7d2ae7;font-weight:bold">
+        <div class="top-left" style="position:absolute;left:10px;top:18px;color:#ffffff;font-weight:bold;font-size:25px">
                 Educom
             </div>
             @if (Route::has('login'))
