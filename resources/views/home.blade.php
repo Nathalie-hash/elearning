@@ -24,7 +24,7 @@
             </div>
         @endforeach
        @else
-       <p class="text-center">
+       <p class="text-center shadow">
        <p class="text-center">Bienvenue {{$user->name}}</p>
        <p >En tant qu'administrateur ,  vous pouvez :</p>
        <ul class="list-group">
