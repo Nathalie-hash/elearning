@@ -77,7 +77,7 @@
                 padding:90px 200px;
                 background:#ffffff4f;
                 color:#202020 !important;
-                transition:all 0.4s ease;
+                transition:all 0.9s ease;
             }
             .welcom-text:hover{
                 top:-25px;
