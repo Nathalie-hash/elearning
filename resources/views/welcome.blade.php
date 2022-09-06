@@ -17,9 +17,9 @@
         <style>
             html, body {
 
-                background-image: url('../../css/OIP.jpg') !important;
+                background-image: url('../../tco1.webp') !important;
                 background-position:center;
-                background-repeat:repeat;
+                background-repeat:no-repeat;
                 color: #636b6f;
                 font-family: 'Nunito', sans-serif;
                 font-weight: 200;
@@ -73,7 +73,7 @@
             .welcom-text{
                 border-radius:15px;
                 padding:90px 200px;
-                background:#ffffff7f;
+                background:#ffffff6f;
                 color:#202020 !important;
             }
         </style>
