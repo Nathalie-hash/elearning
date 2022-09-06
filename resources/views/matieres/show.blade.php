@@ -19,7 +19,7 @@
     <hr>
     <br>
 
-    <h4>Ressources</h4>
+    <h4 class="m-3">Ressources</h4>
     {{-- TODO: lister les ressources associés à ce matière ici
     pour chaque ressources, renseigner un lien de téléchargement
     (cf: RessourcesController@getRessource et web.php)
