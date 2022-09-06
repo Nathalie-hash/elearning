@@ -15,7 +15,8 @@
         <a href="/niveau/{{$matiere->niveau_id}}">{{$matiere->niveau->nom}}</a>
     </h5>
     <p>{{$matiere->detail}}</p>
-
+    <br>
+    <br>
     <hr>
 
     <h5 class="mb-3">Ressources</h5>
