@@ -71,6 +71,7 @@
                 margin-bottom: 30px;
             }
             .welcom-text{
+                position:relative;
                 cursor:pointer;
                 border-radius:15px;
                 padding:90px 200px;
@@ -79,6 +80,7 @@
                 transition:all 0.4s ease;
             }
             .welcom-text:hover{
+                top:50px;
                 background:#ffffff6f;
             }
         </style>
