@@ -24,7 +24,7 @@
             </div>
         @endforeach
        @else
-       <p class="text-center"><span class="spinner-grow"></span></p>
+       <p class="text-center"><span class="spinner-border"></span></p>
        @endif
     @else
     <p class="text-center">Vous êtes enregistré avec succès! Veuillez contacter l'administrateur pour continuer</p>
