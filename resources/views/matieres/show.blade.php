@@ -17,17 +17,17 @@
     <p>{{$matiere->detail}}</p>
     <p>{{ $matiere["détail"]}}</p>
 
-    <hr>  
+    <hr>
     <br>
 
     <h2>Ressources</h2>
     {{-- TODO: lister les ressources associés à ce matière ici
-    pour chaque ressources, renseigner un lien de téléchargement 
+    pour chaque ressources, renseigner un lien de téléchargement
     (cf: RessourcesController@getRessource et web.php)
     --}}
 
-    {{-- TODO: à côté du lien de téléchargement, ajouter un lien de 
-    suppression si l'utilisateur courant a pour rôle enseignant 
+    {{-- TODO: à côté du lien de téléchargement, ajouter un lien de
+    suppression si l'utilisateur courant a pour rôle enseignant
     ou administrateur --}}
     <table class="table table-hover">
         <thead>
@@ -58,7 +58,7 @@
         </tbody>
     </table>
     {{-- TODO: ne pas afficher cette partie pour ajouter les ressources si
-    le rôle de l'utilisateur courant est différent d'enseignant ou d'administrateur 
+    le rôle de l'utilisateur courant est différent d'enseignant ou d'administrateur
     --}}
     @php
     // l'utilisateur courant
@@ -66,13 +66,13 @@
 
     @endphp
     @if(!auth()->user()->hasRole("etudiant"))
-        <h2>Ajouter ressources</h2>
+        <h4>Ajouter ressources</h4>
         <form action="/ressources/add" enctype="multipart/form-data" method="post">
             {{-- TODO: rappel : toujours ajouter cet input _token dans les formulaires. Ici OK --}}
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type="file" name="ressource"  id="">
             <input type="hidden" name="matiere" value="{{$matiere->id}}">
-            <input type="submit" value="téléverser">
+            <input type="submit" class="btn btn-success" value="téléverser">
         </form>
     @endif
 </div>
