@@ -20,13 +20,13 @@
 	<h3 class="bg-violet p-2">Assigner un rôle</h3>
 	<form action="/roles/save" method="POST" class="w-100 p-3" style="width:520px !important">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
-		users: <br>
+		Utilisateurs: <br>
 		<select name="user" id="" class="form-control">
 			@foreach ($users as $user)
 				<option value="{{$user->id}}">{{$user->name}}</option>
 			@endforeach
 		</select>
-		<br>Roles: <br>
+		<br>Rôles: <br>
 		<select name="role" id="" class="form-control">
 			@foreach ($rolesModels as $role)
 				@if($role->name!="administrateur")
