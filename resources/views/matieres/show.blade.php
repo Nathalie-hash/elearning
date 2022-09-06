@@ -14,11 +14,12 @@
         Matière : {{$matiere->nom}}
         <a href="/niveau/{{$matiere->niveau_id}}">{{$matiere->niveau->nom}}</a>
     </h5>
-    <i>{{$matiere->detail}}</i>
+    <p>{{$matiere->detail}}</p>
 
     <hr>
     <br>
-
+    <br>
+    <br>
     <h5 class="mb-3">Ressources</h5>
     {{-- TODO: lister les ressources associés à ce matière ici
     pour chaque ressources, renseigner un lien de téléchargement
@@ -65,6 +66,9 @@
 
     @endphp
     @if(!auth()->user()->hasRole("etudiant"))
+    <br>
+    <br>
+    <hr>
     <h5 class="mb-3">Ajouter ressources</h5>
         <form action="/ressources/add" enctype="multipart/form-data" method="post">
             {{-- TODO: rappel : toujours ajouter cet input _token dans les formulaires. Ici OK --}}
@@ -73,6 +77,7 @@
             <input type="hidden" name="matiere" value="{{$matiere->id}}">
             <input type="submit" class="btn btn-info" value="téléverser">
         </form>
+        <hr>
     @endif
 </div>
 @endsection
