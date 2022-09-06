@@ -10,7 +10,7 @@
         </div>
     @endif
     <hr>
-    <h5 class="mb-3 border-bottom ">
+    <h5 class="mb-3">
         Matière : {{$matiere->nom}}
         <a href="/niveau/{{$matiere->niveau_id}}">{{$matiere->niveau->nom}}</a>
     </h5>
