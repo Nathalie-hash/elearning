@@ -75,13 +75,13 @@
                 cursor:pointer;
                 border-radius:15px;
                 padding:90px 200px;
-                background:#ffffff4f;
+                background:#ffffff8f;
                 color:#202020 !important;
                 transition:all 0.9s ease;
             }
             .welcom-text:hover{
                 top:-5px;
-                background:#ffffff8f;
+                background:#ffffff9f;
             }
         </style>
     </head>
