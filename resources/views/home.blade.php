@@ -27,10 +27,10 @@
        <p class="text-center">
        <p class="text-center">Bienvenue {{$user->name}}</p>
        <p class="text-center">En tant qu'administrateur ,  vous pouvez :</p>
-       <ul>
-       <li>Assigner des rôles</li>
-       <li>Voir la liste des utilisateurs</li>
-       <li>Assigner un niveau à un utilisateur</li>
+       <ul class="list-group">
+       <li class="list-group-item">Assigner des rôles</li>
+       <li class="list-group-item">Voir la liste des utilisateurs</li>
+       <li class="list-group-item">Assigner un niveau à un utilisateur</li>
        </ul>
 
        </p>
