@@ -4,7 +4,7 @@
 
 
 @section('content')
-<div class="container w-100">
+<div class="container w-100 bg-light">
 	    {{-- TODO: ajouter un lien vers la liste des rôles et niveaux --}}
 
 		@php
