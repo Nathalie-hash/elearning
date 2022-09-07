@@ -6,7 +6,7 @@
 }
 
 body{
-    min-height: 100vh; 
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,7 +29,7 @@ body{
     background-color: #5714ad !important;
 }
 .bg-violet{
-    background-color: #7d2ae7 !important;   
+    background-color: #7d2ae7 !important;
     color:#ffffff;
 }
 .table{
@@ -45,13 +45,13 @@ body{
     align-items: center;
    padding: 50px 8px;
    width:395px;
-   
+
 }
 
 
 select{
     background: rgba(238, 241, 238, 0.867) !important;
-    
+
 }
 .btn-deconnect{
     background: none;
@@ -84,7 +84,7 @@ a.nav-link:hover{
     cursor:pointer !important;
 }
 .list-group-item:hover{
-    background-color: #3d3d3d15;
+    background-color: #dddddd !important;
 }
 .input-box input{
     height: 100%;
