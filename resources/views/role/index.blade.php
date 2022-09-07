@@ -15,8 +15,8 @@
     <div>
         <a href="/roles/config" class="btn btn-primary text-light  p-3 mb-5">Role configuration</a>
     </div>
-    <table class="table table-striped shadow">
-        <thead class="bg-violet">
+    <table class="table table-striped shadow rounded">
+        <thead class="bg-violet p-3 ">
             <tr>
                 <th>Utilisateur</th>
                 <th>Rôle</th>
@@ -26,7 +26,7 @@
 
         <tbody>
         @foreach($users as $user)
-            <tr class="bg-light">
+        <tr class="bg-light p-3">
                 <td>
                     {{$user->name}}
                 </td>
