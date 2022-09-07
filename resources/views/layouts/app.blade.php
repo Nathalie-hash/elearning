@@ -29,7 +29,7 @@
     ajouter un lien vers la liste des rôles et niveaux
     cf routes/web.php RoleController@index --}}
 @if(auth())
-<div class="navbar navabr-expand d-flex flex-row ustify-content-space-between fixed-top bg-violet shadow">
+    <div class="navbar navabr-expand d-flex flex-row ustify-content-space-between fixed-top bg-violet shadow">
     <div class="navabar-nav nav">
         <div class="nav-item">
             <a href="/" class="nav-link">Accueil</a>
@@ -45,13 +45,14 @@
         <a href="{{ url('/logout') }}" class="btn btn-deconnect">
             <i class="fa fa-sign-out"></i> Déconnexion</a>
     </div>
-</div>
-<div class="container w-100">
+    </div>
+@endif
+    <div class="container w-100">
     <div class="">
         @yield('content')
     </div>
 </div>
-@endif
+
 
 </body>
 </html>
