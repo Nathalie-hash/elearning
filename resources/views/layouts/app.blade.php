@@ -9,7 +9,20 @@
       <!--custom css file link -->
       <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
       <link href="{{ asset('css/vendor/bootstrap.min.css') }}" rel="stylesheet" />
+      <style>
 
+      html, body {
+
+          background-image: url('../../tco1.webp') !important;
+
+          background-repeat:no-repeat;
+          color: #636b6f;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 200;
+          height: 100vh;
+          margin: 0;
+      }
+      </style>
 
 </head>
 <body>
