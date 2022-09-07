@@ -24,7 +24,7 @@
             </div>
         @endforeach
        @else
-       <div class="container shadow bg-light">
+       <div class="container shadow bg-light p-3 rounded">
        <p class="text-center" style="font-size:25px;font-weight:bold;color:#3d3d3d">Bienvenue <i>{{$user->name}}</i></p>
        <p style="color:#4d4d4d;font-size:13px">En tant qu'administrateur ,  vous pouvez :</p>
        <ul class="list-group">
