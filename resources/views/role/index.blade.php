@@ -4,7 +4,7 @@
 
 
 @section('content')
-<div class="container w-100 text-center bg-light">
+<div class="container w-100 text-center">
     {{-- TODO: ajouter un lien vers la configuration des rôles --}}
     @php
     // l'utilisateur courant
@@ -26,7 +26,7 @@
 
         <tbody>
         @foreach($users as $user)
-            <tr>
+            <tr class="bg-light">
                 <td>
                     {{$user->name}}
                 </td>
