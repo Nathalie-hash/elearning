@@ -9,14 +9,14 @@
       <!--custom css file link -->
       <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
       <link href="{{ asset('css/vendor/bootstrap.min.css') }}" rel="stylesheet" />
-      
+
 
 </head>
 <body>
     {{-- TODO: Ajouter un menu pour naviguer dans l'application --}}
     {{-- utiliser les menus bootstrap --}}
     {{-- TODO: dans le menu, ajouter un bouton pour se connecter si on ne l'est pas
-    et pour se déconnecter si on est déjà connecté (cf:routes/web.php por se documenter éventuellement) 
+    et pour se déconnecter si on est déjà connecté (cf:routes/web.php por se documenter éventuellement)
     On a utilisé le quick start dans la documentation sur l'authentification de laravel7
     --}}
     {{-- TODO: dans le menu, afficher le rôle et le nom de l'utilisateur courant --}}
@@ -26,9 +26,9 @@
     --}}
 
     {{-- TODO: seulement pour l'administrateur, dans le menu,
-    ajouter un lien vers la liste des rôles et niveaux 
+    ajouter un lien vers la liste des rôles et niveaux
     cf routes/web.php RoleController@index --}}
-
+@if(auth())
 <div class="navbar navabr-expand d-flex flex-row ustify-content-space-between fixed-top bg-violet shadow">
     <div class="navabar-nav nav">
         <div class="nav-item">
@@ -45,13 +45,13 @@
         <a href="{{ url('/logout') }}" class="btn btn-deconnect">
             <i class="fa fa-sign-out"></i> Déconnexion</a>
     </div>
-</div>    
+</div>
 <div class="container w-100">
     <div class="">
         @yield('content')
     </div>
 </div>
-
+@endif
 
 </body>
 </html>
