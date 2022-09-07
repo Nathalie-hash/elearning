@@ -42,7 +42,7 @@
     ajouter un lien vers la liste des rôles et niveaux
     cf routes/web.php RoleController@index --}}
     @if(auth()->check())
-    <div class="navbar navabr-expand d-flex flex-row ustify-content-space-between fixed-top bg-violet shadow" style="opacity:0.9">
+    <div class="navbar navabr-expand d-flex flex-row ustify-content-space-between fixed-top bg-violet shadow" style="opacity:0.9 !important">
     <div class="navabar-nav nav">
         <div class="nav-item">
             <a href="/" class="nav-link">Accueil</a>
