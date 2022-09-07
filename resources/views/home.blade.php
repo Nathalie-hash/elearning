@@ -24,7 +24,7 @@
             </div>
         @endforeach
        @else
-       <p class="text-center shadow">
+       <div class="container shadow bg-light">
        <p class="text-center" style="font-size:25px;font-weight:bold;color:#3d3d3d">Bienvenue <i>{{$user->name}}</i></p>
        <p style="color:#4d4d4d;font-size:13px">En tant qu'administrateur ,  vous pouvez :</p>
        <ul class="list-group">
@@ -33,7 +33,7 @@
        <li class="list-group-item">Voir la liste des utilisateurs</li>
        </ul>
 
-       </p>
+       </div>
        @endif
     @else
     <p class="text-center">Vous êtes enregistré avec succès! Veuillez contacter l'administrateur pour continuer</p>
