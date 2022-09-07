@@ -3,7 +3,7 @@
 @section ( '{{$matiere->nom}}', 'Matiere')
 
 @section('content')
-<div class="container-fluid">
+<div class="container bg-light p-3 rounded">
     @if (session('succes'))
         <div class="alert alert-success">
             {{ session('succes') }}
