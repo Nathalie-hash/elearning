@@ -4,7 +4,7 @@
 
 
 @section('content')
-<div class="container w-100 text-center">
+<div class="container w-100 text-center bg-light">
     {{-- TODO: ajouter un lien vers la configuration des rôles --}}
     @php
     // l'utilisateur courant
@@ -31,7 +31,7 @@
                     {{$user->name}}
                 </td>
                 <td>
-                    {{$user->roles->first()["name"]}}               
+                    {{$user->roles->first()["name"]}}
                 </td>
                 <td>
                     <ul style="list-style: none">
