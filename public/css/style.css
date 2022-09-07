@@ -164,7 +164,8 @@ p{
 }
 
 .bg-light{
-    opacity:0.5 !important;
+    background:red !important;
+    opacity:0. !important;
 }
 
 /*.container{
