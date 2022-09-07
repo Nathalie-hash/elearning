@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-5">
-            <div class="card shadow">
+        <div class="card shadow bg-light">
                 <div class="card-header">{{ __("S'inscricre") }}</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -50,7 +50,7 @@
                                     </span>
                                 @enderror
                             </div>
-                        </div> 
+                        </div>
                         <div class="form-group row">
                             <label for="password" class="col-md-12 col-form-label text-md-left">{{ __('Mot de passe') }}</label>
 
