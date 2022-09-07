@@ -12,7 +12,7 @@
     @endif
     {{-- TODO s'inspirer de resources/views/matieres/show.blade.php pour mettre dans les
     @section --}}
-    <div class="container bg-light p-3">
+    <div class="container bg-light p-3 rounded">
     <h3>{{$niveau->nom}}</h3>
 
     Liste des matières dans cet niveau
