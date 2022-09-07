@@ -11,7 +11,7 @@
 
     @hasanyrole('administrateur|etudiant|enseignant')
      @if(!$user->hasRole("administrateur"))
-     <div class="container shadow ">
+     <div class="container">
         @foreach($user->niveaux as $niveau)
             <div class="box" style="width:720px !important">
             <h4 style="font-size:18px;padding-bottom:10px;font-weight:bold;color:#7d2ae7;border-bottom:1px solid #7d2ae7 !important"><a href="/niveau/{{ $niveau->id }}" class="btn btn-primary p-2" style="text-decoration: none"> Niveau {{$niveau->nom}}</a></h4>
