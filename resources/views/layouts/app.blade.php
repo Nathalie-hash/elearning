@@ -9,14 +9,27 @@
       <!--custom css file link -->
       <link href="{{ asset('css/style.css') }}" rel="stylesheet" />
       <link href="{{ asset('css/vendor/bootstrap.min.css') }}" rel="stylesheet" />
-      
+      <style>
+
+      html, body {
+
+          background-image: url('../../tco1.webp') !important;
+
+          background-repeat:no-repeat;
+          color: #636b6f;
+          font-family: 'Nunito', sans-serif;
+          font-weight: 200;
+          height: 100vh;
+          margin: 0;
+      }
+      </style>
 
 </head>
 <body>
     {{-- TODO: Ajouter un menu pour naviguer dans l'application --}}
     {{-- utiliser les menus bootstrap --}}
     {{-- TODO: dans le menu, ajouter un bouton pour se connecter si on ne l'est pas
-    et pour se déconnecter si on est déjà connecté (cf:routes/web.php por se documenter éventuellement) 
+    et pour se déconnecter si on est déjà connecté (cf:routes/web.php por se documenter éventuellement)
     On a utilisé le quick start dans la documentation sur l'authentification de laravel7
     --}}
     {{-- TODO: dans le menu, afficher le rôle et le nom de l'utilisateur courant --}}
@@ -26,10 +39,10 @@
     --}}
 
     {{-- TODO: seulement pour l'administrateur, dans le menu,
-    ajouter un lien vers la liste des rôles et niveaux 
+    ajouter un lien vers la liste des rôles et niveaux
     cf routes/web.php RoleController@index --}}
-
-<div class="navbar navabr-expand d-flex flex-row ustify-content-space-between fixed-top bg-violet shadow">
+    @if(auth()->check())
+    <div class="navbar navabr-expand d-flex flex-row ustify-content-space-between fixed-top bg-violet shadow" style="opacity:0.9 !important">
     <div class="navabar-nav nav">
         <div class="nav-item">
             <a href="/" class="nav-link">Accueil</a>
@@ -45,8 +58,9 @@
         <a href="{{ url('/logout') }}" class="btn btn-deconnect">
             <i class="fa fa-sign-out"></i> Déconnexion</a>
     </div>
-</div>    
-<div class="container w-100">
+    </div>
+@endif
+    <div class="container w-100">
     <div class="">
         @yield('content')
     </div>

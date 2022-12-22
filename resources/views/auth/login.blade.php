@@ -5,22 +5,22 @@
 <div class="container">
     <div class="row justify-content-center">
 
-    
-    <form  method="POST" action="{{ route('login') }}" class="shadow"  id="login-form" > 
+
+    <form  method="POST" action="{{ route('login') }}" class="shadow bg-light"  id="login-form" >
         @csrf
-       
+
         <div class="">
             <div class="title p-2 mb-5">Login here</div>
-            
+
             <div class="input-box">
-                
+
                 <input type="text" placeholder="Email" id="email" name="email" class="form-control w-100  @error('email') is-invalid @enderror" required autocomplete="email" autofocus>
             </div>
             <div class="input-box">
-               
+
                 <input type="password" placeholder="Password" id="password" name="password" class="form-control w-100" value="{{ old('email') }}"  required>
             </div>
-            
+
             <div class="form-group row">
                 <div class="col-md-6 ">
                     <div class="form-check">
@@ -46,7 +46,7 @@
                         {{ __('Login') }}
                     </button>
 
-                    
+
                 </div>
                 <div class="col-md-12">
                     <div class="text w-100 text-center" style="color: #5a5a5a;font-size:14px;text-align: center !important;">Don't have an account?</div>

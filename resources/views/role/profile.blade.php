@@ -4,8 +4,8 @@
 <section class="vh-100" style="background-color: #f4f5f7;">
   <div class="container_12 py-5 h-100">
     <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col col-lg-6 mb-4 mb-lg-0">
-        <div class="card mb-3" style="border-radius: .5rem;">
+      <div class="col col-lg-6 mb-4 mb-lg-0 w-100">
+        <div class="card mb-3 w-100" style="border-radius: .5rem;">
           <div class="row g-0">
             <div class="col-md-4 gradient-custom text-center text-black"
               style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
@@ -53,6 +53,6 @@
 
 
 <div class="alert alert-success" role="alert">
-    <strong>Bienvenue, {{$user->name}} !</strong> <br> Vous êtes connecté en tant que, {{$roles}}.  
+    <strong>Bienvenue, {{$user->name}} !</strong> <br> Vous êtes connecté en tant que, {{$roles}}.
 </div>
 @endsection

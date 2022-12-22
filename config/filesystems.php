@@ -55,10 +55,10 @@ return [
             'visibility' => 'public',
         ],
 
-        'java' => [
+        'app' => [
             'driver' => 'local',
-            'root' => storage_path('app/java'),
-            'url' => env('APP_URL').'/storage/app/java',
+            'root' => storage_path('app/'),
+            'url' => env('APP_URL').'/storage/app/',
             'visibility' => 'public',
         ],
 

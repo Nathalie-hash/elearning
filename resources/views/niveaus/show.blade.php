@@ -12,6 +12,7 @@
     @endif
     {{-- TODO s'inspirer de resources/views/matieres/show.blade.php pour mettre dans les
     @section --}}
+    <div class="container bg-light p-3 rounded">
     <h3>{{$niveau->nom}}</h3>
 
     Liste des matières dans cet niveau
@@ -30,7 +31,7 @@
         <ul>
         {{--@foreach($niveau->n as $user)
             <li>{{$user->nom}} </li>
-        
+
         @endforeach--}}
         </ul>
     @endif
@@ -57,6 +58,7 @@
             <button type="submit" class="btn btn-primary my-1">Ajouter</button>
         </div>
 
-    </form> 
+    </form>
+    <div>
     @endif
 @endsection

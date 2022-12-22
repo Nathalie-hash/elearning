@@ -27,7 +27,7 @@ class RessourcesController extends Controller
     }
 
     // pour pouvoir télécharger une ressource
-    public function getRessource($id){ 
+    public function getRessource($id){
         // TODO: seul les personnes connectés ayant un rôle
         // étudiant ou enseignant ou administrateur peuventa accéder au ressource
         // TODO: si le rôle est étudiant et qu'il n'est pas dans
@@ -35,31 +35,32 @@ class RessourcesController extends Controller
         // Pour rappel on a
         // user => niveau => matiere => ressource
         $matiere = Ressource::where('id',$id)->get()->first()["matiere_id"];
+        $name_disk =  Matiere::where('id',$matiere)->get()->first()["nom"];
         $niveau_matiere = Matiere::where('id',$matiere)->get()->first()["niveau_id"];
         $id_user=auth()->user()->id;
         $niveau_user= auth()->user()->niveaux()->where('user_id',$id_user)->get()->first()["pivot"]["niveau_id"];
         if (auth()->check() && auth()->user()->hasRole('enseignant')){
             $resource = Ressource::find($id);
             $pathname= $resource->chemin;
-            return Storage::disk("java")->download($pathname);
+            return Storage::disk("app")->download($pathname);
         }else if (auth()->check() && auth()->user()->hasRole('administrateur')) {
             $resource = Ressource::find($id);
             $pathname= $resource->chemin;
             return Storage::disk()->download($pathname);
         }else if(auth()->check() && auth()->user()->hasRole('etudiant') && $niveau_matiere == $niveau_user)  {
-            $resource = Ressource::find($id); 
-            $pathname= $resource->chemin;            
-            return Storage::disk("java")->download($pathname);
+            $resource = Ressource::find($id);
+            $pathname= $resource->chemin;
+            return Storage::disk("app")->download($pathname);
         }else{
             abort(401, 'You are not allowed to access this page');
         }
 
-    
+
 
 }
-        
-    
-   
+
+
+
 
     // pour ajouter une ressource
     public function add(Request $request){
@@ -73,7 +74,7 @@ class RessourcesController extends Controller
         // stocker le fichier dans le disk correspondant
         // on va faire un disque par matière
         $path = $request->file('ressource')->store(Str::snake($matiere->nom));
-       
+
         $resource = new Ressource();
         $resource->chemin = $path;
         $resource->matiere_id = $request->matiere;
